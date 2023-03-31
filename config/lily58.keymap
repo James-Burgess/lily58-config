@@ -31,11 +31,11 @@
             //                     | ALT  | GUI  | LOWER|  SPACE |  | ENTER | RAISE| BSPC  | GUI   |
 
             bindings = <
-  &kp ESC  &kp N1  &kp N2    &kp N3    &kp N4  &kp N5                       &kp N6    &kp N7     &kp N8   &kp N9    &kp N0  &kp GRAVE
-  &kp TAB   &kp Q   &kp W     &kp E     &kp R   &kp T                        &kp Y     &kp U      &kp I    &kp O     &kp P  &kp MINUS
-&kp LCTRL   &kp A   &kp S     &kp D     &kp F   &kp G                        &kp H     &kp J      &kp K    &kp L  &kp SEMI    &kp SQT
-&kp LSHFT   &kp Z   &kp X     &kp C     &kp V   &kp B   &kp LBKT  &kp RBKT   &kp N     &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
-                           &kp LALT  &kp LGUI   &mo 1  &kp SPACE   &kp RET   &mo 2  &kp BSPC   &kp RGUI
+  &kp ESC  &kp N1  &kp N2    &kp N3     &kp N4  &kp N5                             &kp N6    &kp N7     &kp N8   &kp N9    &kp N0  &kp GRAVE
+  &kp TAB   &kp Q   &kp W     &kp E      &kp R   &kp T                              &kp Y     &kp U      &kp I    &kp O     &kp P  &kp MINUS
+&kp LCTRL   &kp A   &kp S     &kp D      &kp F   &kp G                              &kp H     &kp J      &kp K    &kp L  &kp SEMI    &kp SQT
+&kp LSHFT   &kp Z   &kp X     &kp C      &kp V   &kp B  &kp DELETE  &kp BACKSPACE   &kp N     &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
+                           &kp LALT  &kp ENTER   &mo 2    &kp LGUI      &kp SPACE   &mo 1  &kp RGUI  &kp ENTER
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -77,16 +77,6 @@
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
-        };
-
-        Layer__3 {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                  &kp PLUS     &kp MINUS  &trans  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3
-&trans  &trans  &trans  &trans  &trans  &trans                  &kp STAR  &kp KP_SLASH  &trans  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans        &trans  &trans  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans        &trans  &trans           &trans  &kp KP_NUMBER_0           &trans
-                        &trans  &trans  &trans  &trans  &trans    &trans        &trans  &trans
-            >;
         };
     };
 };
